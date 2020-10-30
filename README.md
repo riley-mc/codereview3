@@ -3,16 +3,7 @@
 #### _JavaScript, JQuery, For Loop and Array Week 3 Epicodus 10/23/2020_
 
 ## Description
-The web application takes a number from a user and returns a range of numbers from 0 to the user inputted number with the following exceptions:
-
-Numbers that contain a 1: all digits are replaced (all digits) with "Beep!"
-Numbers that contain a 2: all digits are replaced (all digits) with "Boop!"
-Numbers that contain a 3: all digits are replaced (all digits) with "Won't you be my neighbor?"
-These exceptions are written from least to most important. The first exception will apply unless the second exception does, and the same with the second and third. So, for example,
-
-The number 13 should be replaced with "Won't you be my neighbor?"
-The number 21 should be replaced with "Boop".
-The number 32 should be replaced with "Won't you be my neighbor?"
+The web application takes a number from a user and returns a range of numbers from 0 to the user inputted number with the following exceptions: Beep and Boops will replace numbers in selected areas.
 
 
 
@@ -20,14 +11,13 @@ The number 32 should be replaced with "Won't you be my neighbor?"
 
 | Behavior | Input | Output |
 |------------------------|-----------------|---------------------|
-| It will accept the user input and return unchanged | 5 | 5 |
 | The program will take number from user and return a range of numbres from zero to the user input. | 5 | 0,1,2,3,4,5 |
-| It will use the input for our loop | 5 | i<=5 | 
-| It the loop it will push index into an array | i <=5 | 0, 1, 2, 3, 4, 5 |
-| It will then take that through an if else statement | 0, 1, 2, 3, 4, 5 | 0, Beep!, Boop!, Won't you be my neighbor?, 4, 5 |
-
-
-
+| Numbers that contain a 1: all digints are replaced (all digits) with "Beep" | 1 | Beep
+| Numbers that contain a 2: all digints are replaced (all digits) with "Boop" | 2 | Boop
+| Numbers that contain a 3: all digits are replaced (all digits) with "Won't you be my neighbor?" | 3 | Won't you be my neighbor?
+| The number 13 should be replaced with "Won't you be my neighbor?" | 13 | Won't you be my neighbor? |
+| The 21 should be replaced with "Boop" | 21 | Boop
+| The number 32 should be replaced with "Won't you be my neighbor?" | 32 | Won't you be my neighbor? |
 
 
 ## Setup/Installation Requirements
