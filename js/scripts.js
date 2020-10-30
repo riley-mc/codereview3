@@ -1,22 +1,18 @@
 // Business Logic
-function roboSwap(num)  {
+function roboSwap(num, word)  {
   const numArray = [];
 
   for (let i = 0; i <= num; i++) {
+    let check = i.toString();
+
+    if(check.includes(1)) {
+      numArray.push("Won't you be my neighbor?")
+    }
+
+    }
   }
 
  
-
-
-Describe: roboSwap()
-Test: "It should return an aray with a 5 if the number 5 is input"
-Expect: (roboSwap(5).toEqual([5])
-
-
-
-
-
-
 
 
 
@@ -30,8 +26,13 @@ Expect: (roboSwap(5).toEqual([5])
 //User Interface Logic
 
 $(document).ready(function()  {
-  $("form#userInput").submit(function() {
+  $("form#userInput").submit(function(event) {
     event.preventDefault();
+    var number = $("#number").val();
+    var result = roboSwap(number);
+    // $("#number").val (" "); Might not need
+    $("#container").text(results);
+    $("results").show();
 
     let num = $("input#num").val();
     let result = roboSwap(num);
