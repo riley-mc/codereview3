@@ -1,8 +1,18 @@
 // Business Logic
 function roboSwap(num)  {
-  const numAray = [];
+  const numArray = [];
 
-}
+  for (let i = 0; i <= num; i++) {
+  }
+
+ 
+
+
+Describe: roboSwap()
+Test: "It should return an aray with a 5 if the number 5 is input"
+Expect: (roboSwap(5).toEqual([5])
+
+
 
 
 
@@ -20,24 +30,13 @@ function roboSwap(num)  {
 //User Interface Logic
 
 $(document).ready(function()  {
-  $("form#text").submit(function() {
+  $("form#userInput").submit(function() {
     event.preventDefault();
 
     let num = $("input#num").val();
     let result = roboSwap(num);
 
-    $("output").append(results);
+    // $("output").append(results);
 
   });
 });
-
-
-
-
-
-
-
-
-
-
-
