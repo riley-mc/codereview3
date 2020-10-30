@@ -1,43 +1,42 @@
 // Business Logic
-function roboSwap(num, word)  {
-  const numArray = [];
+var userInputResults = function(number) {
+  var result = [];
 
-  for (let i = 0; i <= num; i++) {
-    let check = i.toString();
+  for (index = 0; index <= number; index++) {
+    result.push(" " + index);
+    var string = index.toString();
 
-    if(check.includes(1)) {
-      numArray.push("Won't you be my neighbor?")
-    }
-
-    }
+    if (string.includes("3")){
+    result.splice(index, 1, "Will you be my neighbor?")
+  } else if (string.includes("2")){
+    result.splice(index, 1, "Boop")
+  } else if (string.includes("1")){
+    result.splice(index, 1, "Beep")
   }
-
- 
-
-
-
-
+}
+  return results;
+}
+    
 
 
 
-
-
-
-//User Interface Logic
+// User Interface Logic
 
 $(document).ready(function()  {
   $("form#userInput").submit(function(event) {
     event.preventDefault();
     var number = $("#number").val();
-    var result = roboSwap(number);
-    // $("#number").val (" "); Might not need
+    var results = userInputResults(number);
+    $("#number").val (" "); // Might not need.
     $("#container").text(results);
     $("results").show();
-
-    let num = $("input#num").val();
-    let result = roboSwap(num);
-
-    // $("output").append(results);
+    $("output").append(results);
 
   });
 });
+
+
+
+
+// let num = $("input#num").val();
+// let result = roboSwap(num);
