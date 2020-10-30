@@ -38,6 +38,7 @@ _Go to my GitHub repository here, {{[https://github.com/riley-mc/codereview3](ht
 
 
 ## Known Bugs
+_Not sure if typing in 32 is working_
 
 ## Support or Contact information
 
