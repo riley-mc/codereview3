@@ -1,11 +1,11 @@
 // Business Logic
-function roboSwap(num, name) {
+function roboSwap(num) {
   const numArray = [];
   for (let index = 0; index <= num; i++)  {
     let check = index.toString();
 
     if (check.includes(3))  {
-      numArray.push("Won't you be my neighbor" + "?")
+      numArray.push("Won't you be my neighbor?")
     } else if (check.includes(2)){
       numArray.push("Boop")
     } else if (check.includes(1)){
@@ -17,23 +17,23 @@ function roboSwap(num, name) {
       }
 return numArray
     }
-  
-
 
 
 // User Interface Logic
 
 $(document).ready(function()  {
-  $("form#userInput").submit(function(event) {
+  $("form#numBar").submit(function(event) {
     event.preventDefault();
-    var number = $("#number").val();
-    var results = userInputResults(number);
-    $("#number").val (" "); // Might not need.
-    $("#container").text(results);
-    $("results").show();
 
+    let num = $("input#num").val();
+    let result = roboSwap(num);
+
+    $("output").append(result);
+    $("form#numBar")[0].reset();
+
+    });
   });
-});
+
 
 
 
