@@ -1,3 +1,15 @@
 body {
   background-color: rgb(233, 183, 123);
+  text-align: center;
+}
+
+#result {
+  display:none;
+}
+
+#output {
+  color: red;
+  font-size: 22px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 22px;
 }

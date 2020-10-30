@@ -13,6 +13,7 @@ var numBarResults = function(number) {
     } else if (string.includes("1")){
       result.splice(index, 1, " Beep!")
     
+    
     }
   }
 return result;
@@ -25,7 +26,6 @@ $(document).ready(function() {
     event.preventDefault();
     var number = $("#number").val();
     var result = numBarResults(number);
-    $("#number").val(" "); //maybe delete??
     $("#output").text(result);
     $("#result").show();
   });
